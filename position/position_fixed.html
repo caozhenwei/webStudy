@@ -1,0 +1,49 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>postion相关属性</title>
+<head>
+<style type="text/css">
+	#body {
+		background-color: #ccc;
+	}
+	.pos_abs1 {
+		background-color: red;
+		width: 100px;
+		height: 100px;
+	}
+	.pos_abs2_parent {
+		background-color: Pink;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 150px;
+		top: 150px;
+	}
+	.pos_abs2 {
+		background-color: green;
+		width: 100px;
+		height: 100px;
+		position: fixed;
+		left: 50px;
+		top: 50px;
+	}
+	.pos_abs3 {
+		background-color: blue;
+		width: 100px;
+		height: 100px;
+	}
+</style>
+</head>
+
+<body id="body">
+	<div class="pos_abs1"> <p>div1</p> </div>
+	<div class="pos_abs2_parent">
+		<div class="pos_abs2"> 
+		<p>div2</p> 
+	</div>	
+	</div>
+	<div class="pos_abs3"> <p>div3</p> </div>
+	<p>从上述代码可以看出，当对 div2 设置 position 为 fixed 时,总是以浏览器的可视窗口进行定位</p>
+</body>
+
+</html>
